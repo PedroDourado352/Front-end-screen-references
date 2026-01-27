@@ -29,6 +29,15 @@ Aqui você encontrará diferentes estilos de login pages, focando em UI/UX, resp
 
 - HTML5  
 - CSS3  
-- JavaScript (quando aplicável)  
+- JavaScript 
+- Bootstrap
+- tailwind css
 
 > Algumas telas podem usar apenas HTML + CSS, enquanto outras exploram animações ou interações extras.
+
+Websites que auxiliam no desenvolvimento front-end:
+
+https://cssgradient.io/
+https://webcode.tools/css-generator/keyframe-animation
+https://webcode.tools/html-generator
+https://uiverse.io/
