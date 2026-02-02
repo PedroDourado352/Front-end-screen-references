@@ -31,7 +31,7 @@ Aqui você encontrará diferentes estilos de login pages, focando em UI/UX, resp
 - CSS3  
 - JavaScript 
 - Bootstrap
-- tailwind css
+- Tailwind css
 
 > Algumas telas podem usar apenas HTML + CSS, enquanto outras exploram animações ou interações extras.
 
