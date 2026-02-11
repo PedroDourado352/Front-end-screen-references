@@ -1,6 +1,6 @@
 # 🎨 Login Screens Reference
 
-Repositório criado com o objetivo de **reunir telas de login modernas, criativas e funcionais, servindo como referência e inspiração para desenvolvedores em seus projetos pessoais e profissionais.
+Repositório criado com o objetivo de reunir telas de login modernas, criativas e funcionais, servindo como referência e inspiração para desenvolvedores em seus projetos pessoais e profissionais.
 
 Aqui você encontrará diferentes estilos de login pages, focando em UI/UX, responsividade e boas práticas de front-end.
 
@@ -18,7 +18,7 @@ Aqui você encontrará diferentes estilos de login pages, focando em UI/UX, resp
 ## 🖥️ O que você vai encontrar
 
 - 🔐 Telas de login simples e minimalistas  
-- 🌌 Telas de login com **backgrounds animados**  
+- 🌌 Telas de login com backgrounds animados  
 - 🎨 Layouts modernos e responsivos  
 - 🌙 Temas dark e light  
 - ✨ Animações leves com CSS  
