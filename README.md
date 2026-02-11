@@ -33,7 +33,7 @@ Aqui você encontrará diferentes estilos de login pages, focando em UI/UX, resp
 - Bootstrap
 - Tailwind css
 - ReactJs
-- Angular
+- Vue
 
 > Algumas telas podem usar apenas HTML + CSS, enquanto outras exploram animações ou interações extras.
 
