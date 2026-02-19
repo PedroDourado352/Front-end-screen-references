@@ -1,0 +1,152 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+	background: #ffffff;
+	color: #222;
+}
+
+.page {
+	min-height: 100vh;
+	padding-bottom: 40px;
+}
+
+.topbar {
+	height: 42px;
+	background: #c64040;
+	display: flex;
+	align-items: center;
+	padding: 0 16px;
+}
+
+.logo {
+	width: 54px;
+	height: 54px;
+	border-radius: 50%;
+	background: #f7f7f7;
+	color: #b53737;
+	font-size: 9px;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: 700;
+	border: 2px solid #d9d9d9;
+	line-height: 1.1;
+}
+
+.table-wrap {
+	width: min(980px, 92vw);
+	margin: 22px auto 0;
+}
+
+.rateio-table {
+	width: 100%;
+	border-collapse: collapse;
+	table-layout: fixed;
+	font-size: 11px;
+}
+
+.rateio-table th,
+.rateio-table td {
+	padding: 6px 8px;
+	border-bottom: 1px solid #e6e6e6;
+	vertical-align: middle;
+}
+
+.col-empresa {
+	text-align: left;
+	width: 46%;
+	font-weight: 600;
+}
+
+.rateio-table th:not(.col-empresa),
+.rateio-table td:not(.col-empresa) {
+	text-align: center;
+}
+
+.title-row th {
+	background: #c64040;
+	color: #ffffff;
+	font-weight: 700;
+	border-bottom: none;
+	padding: 8px 8px;
+}
+
+.subtitle-row th {
+	font-weight: 600;
+	color: #444;
+	background: #ffffff;
+	padding: 6px 8px 10px;
+}
+
+.subtitle-row th:not(.col-empresa) {
+	color: #2c2c2c;
+}
+
+.section-row td {
+	border-bottom: none;
+	padding: 6px 0 2px;
+}
+
+.section-row span {
+	display: inline-block;
+	border: 2px solid #c64040;
+	color: #c64040;
+	padding: 2px 8px;
+	font-weight: 700;
+	border-radius: 2px;
+	margin-left: 2px;
+	font-size: 11px;
+}
+
+.data-row td:not(.col-empresa) {
+	background: #f8ee9a;
+	border-bottom: 1px solid #f0e186;
+	font-weight: 600;
+}
+
+.editable {
+	outline: none;
+	cursor: text;
+	transition: box-shadow 0.15s ease, background 0.15s ease;
+}
+
+.editable:focus {
+	background: #fff6b8;
+	box-shadow: inset 0 0 0 2px rgba(198, 64, 64, 0.6);
+}
+
+.data-row td.col-empresa {
+	font-weight: 600;
+	color: #333;
+}
+
+.validator-row th {
+	padding-top: 10px;
+	font-weight: 700;
+	border-bottom: none;
+}
+
+.validator-row th:not(.col-empresa) {
+	background: #8cc63e;
+	color: #1d2b0d;
+	border: 1px solid #7bb337;
+	border-radius: 2px;
+}
+
+.resultado-row th {
+	padding-top: 8px;
+	font-weight: 700;
+	border-bottom: none;
+	color: #333;
+}
+
+.resultado-row th:not(.col-empresa) {
+	background: #ffffff;
+	border-bottom: none;
+}
