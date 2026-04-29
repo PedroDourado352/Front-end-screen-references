@@ -1,0 +1,948 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+ul { list-style: none; }
+a  { text-decoration: none; }
+button { background: none; border: none; cursor: pointer; font-family: inherit; }
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: #f1f5f9;
+  color: #1e293b;
+}
+
+/* ══════════════════════════════════════
+   PÁGINA DE REFERÊNCIA
+══════════════════════════════════════ */
+.ref-page {
+  min-height: 100vh;
+  padding: 56px 0 80px;
+}
+
+.ref-header {
+  text-align: center;
+  margin-bottom: 64px;
+  padding: 0 24px;
+}
+
+.ref-header h1 {
+  font-size: 38px;
+  font-weight: 800;
+  color: #0f172a;
+  letter-spacing: -0.8px;
+  margin-bottom: 8px;
+}
+
+.ref-header p {
+  font-size: 15px;
+  color: #64748b;
+}
+
+.ref-section {
+  margin-bottom: 52px;
+}
+
+.ref-section--overflow {
+  overflow: visible;
+}
+
+.ref-section--dark-bg {
+  background: #0f172a;
+  padding: 36px 0 40px;
+}
+
+.ref-label {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 0 40px;
+  margin-bottom: 12px;
+}
+
+.ref-label--on-dark .ref-name { color: #94a3b8; }
+.ref-label--on-dark .ref-num  { color: #475569; }
+
+.ref-num {
+  font-family: 'Courier New', monospace;
+  font-size: 11px;
+  font-weight: 700;
+  color: #94a3b8;
+  letter-spacing: 1.5px;
+}
+
+.ref-name {
+  font-size: 13px;
+  font-weight: 600;
+  color: #334155;
+}
+
+.ref-tags {
+  display: flex;
+  gap: 6px;
+}
+
+.ref-tags span {
+  font-size: 10.5px;
+  font-weight: 500;
+  padding: 2px 8px;
+  background: #e2e8f0;
+  color: #64748b;
+  border-radius: 4px;
+}
+
+.ref-tags--dark span {
+  background: #1e293b;
+  color: #475569;
+}
+
+/* ══════════════════════════════════════
+   01 — SaaS CLÁSSICA
+   Uso: landing pages, SaaS, marketing
+══════════════════════════════════════ */
+.nav-saas {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  padding: 0 40px;
+  background: #fff;
+  border-top: 1px solid #e2e8f0;
+  border-bottom: 1px solid #e2e8f0;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+}
+
+.nav-saas__logo {
+  font-size: 19px;
+  font-weight: 700;
+  color: #0f172a;
+  letter-spacing: -0.4px;
+}
+
+.nav-saas__links {
+  display: flex;
+  gap: 32px;
+}
+
+.nav-saas__links a {
+  font-size: 14px;
+  font-weight: 500;
+  color: #475569;
+  transition: color 0.15s;
+}
+
+.nav-saas__links a:hover { color: #0f172a; }
+
+.nav-saas__actions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.saas-ghost {
+  font-size: 14px;
+  font-weight: 500;
+  color: #475569;
+  padding: 7px 16px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  transition: all 0.15s;
+}
+
+.saas-ghost:hover { background: #f8fafc; color: #0f172a; }
+
+.saas-cta {
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  padding: 7px 18px;
+  background: #6366f1;
+  border-radius: 8px;
+  transition: background 0.15s;
+}
+
+.saas-cta:hover { background: #4f46e5; }
+
+/* ══════════════════════════════════════
+   02 — DARK TECH
+   Uso: ferramentas dev, CLI, open source
+══════════════════════════════════════ */
+.nav-dark {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  padding: 0 40px;
+  background: #09090b;
+  border-top: 1px solid #18181b;
+  border-bottom: 1px solid #27272a;
+}
+
+.nav-dark__logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fafafa;
+  letter-spacing: -0.2px;
+}
+
+.dark-gem { color: #818cf8; font-size: 16px; }
+
+.nav-dark__links {
+  display: flex;
+  gap: 28px;
+}
+
+.nav-dark__links a {
+  font-size: 14px;
+  font-weight: 400;
+  color: #71717a;
+  transition: color 0.15s;
+}
+
+.nav-dark__links a:hover { color: #fafafa; }
+
+.nav-dark__actions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.dark-gh {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13.5px;
+  font-weight: 500;
+  color: #a1a1aa;
+  padding: 6px 14px;
+  border: 1px solid #27272a;
+  border-radius: 7px;
+  transition: all 0.15s;
+}
+
+.dark-gh:hover { border-color: #3f3f46; color: #fafafa; }
+
+.dark-cta {
+  font-size: 13.5px;
+  font-weight: 600;
+  color: #09090b;
+  padding: 7px 16px;
+  background: #fafafa;
+  border-radius: 7px;
+  transition: background 0.15s;
+}
+
+.dark-cta:hover { background: #e4e4e7; }
+
+/* ══════════════════════════════════════
+   03 — E-COMMERCE
+   Uso: lojas virtuais, marketplaces
+══════════════════════════════════════ */
+.nav-ecom {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  height: 64px;
+  padding: 0 40px;
+  background: #fff;
+  border-top: 1px solid #e2e8f0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.nav-ecom__logo {
+  font-size: 20px;
+  font-weight: 800;
+  color: #0f172a;
+  letter-spacing: -0.6px;
+  flex-shrink: 0;
+}
+
+.nav-ecom__cats {
+  display: flex;
+  gap: 22px;
+  flex-shrink: 0;
+}
+
+.nav-ecom__cats a {
+  font-size: 13.5px;
+  font-weight: 500;
+  color: #475569;
+  transition: color 0.15s;
+}
+
+.nav-ecom__cats a:hover { color: #0f172a; }
+.sale-link { color: #dc2626 !important; font-weight: 600 !important; }
+
+.nav-ecom__search {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 9px;
+  padding: 8px 14px;
+  transition: all 0.15s;
+}
+
+.nav-ecom__search:focus-within {
+  border-color: #94a3b8;
+  background: #fff;
+}
+
+.nav-ecom__search i { color: #94a3b8; font-size: 14px; flex-shrink: 0; }
+
+.nav-ecom__search input {
+  border: none;
+  background: transparent;
+  outline: none;
+  font-size: 13.5px;
+  font-family: inherit;
+  color: #1e293b;
+  width: 100%;
+}
+
+.nav-ecom__search input::placeholder { color: #94a3b8; }
+
+.nav-ecom__icons {
+  display: flex;
+  gap: 2px;
+  flex-shrink: 0;
+}
+
+/* Shared icon button (usado em várias navbars) */
+.icon-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 8px;
+  color: #475569;
+  font-size: 17px;
+  transition: all 0.15s;
+  position: relative;
+}
+
+.icon-btn:hover { background: #f1f5f9; color: #0f172a; }
+
+.cart-btn { position: relative; }
+
+.cart-badge {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #ef4444;
+  color: #fff;
+  font-size: 9px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1.5px solid #fff;
+}
+
+/* ══════════════════════════════════════
+   04 — MEGA MENU
+   Uso: plataformas com muitos produtos
+══════════════════════════════════════ */
+.nav-mega {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  padding: 0 40px;
+  background: #fff;
+  border-top: 1px solid #e2e8f0;
+  border-bottom: 1px solid #e2e8f0;
+  position: relative;
+  z-index: 300;
+}
+
+.nav-mega__logo {
+  font-size: 18px;
+  font-weight: 700;
+  color: #0f172a;
+  letter-spacing: -0.3px;
+}
+
+.nav-mega__links {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.nav-mega__links > li > a {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #475569;
+  padding: 8px 14px;
+  border-radius: 8px;
+  transition: all 0.15s;
+}
+
+.nav-mega__links > li > a:hover,
+.has-mega.active > a {
+  background: #f1f5f9;
+  color: #0f172a;
+}
+
+.has-mega > a i {
+  font-size: 10px;
+  transition: transform 0.2s;
+}
+
+.has-mega.active > a i { transform: rotate(180deg); }
+
+/* — Mega Panel — */
+.has-mega { position: relative; }
+
+.mega-panel {
+  display: none;
+  position: absolute;
+  top: calc(100% + 10px);
+  left: -16px;
+  width: 680px;
+  grid-template-columns: 1fr 1fr 1fr;
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  box-shadow: 0 12px 40px rgba(0,0,0,0.12);
+  padding: 8px;
+  z-index: 400;
+}
+
+.has-mega.active .mega-panel { display: grid; }
+
+.mega-col { padding: 16px; }
+
+.mega-col--hl {
+  background: linear-gradient(150deg, #6366f1 0%, #8b5cf6 100%);
+  border-radius: 10px;
+}
+
+.mega-col-title {
+  display: block;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #94a3b8;
+  margin-bottom: 12px;
+}
+
+.mega-col--hl .mega-col-title { color: rgba(255,255,255,0.55); }
+
+.mega-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 9px;
+  border-radius: 9px;
+  color: #1e293b;
+  transition: background 0.15s;
+  margin-bottom: 2px;
+}
+
+.mega-item:hover { background: #f8fafc; }
+
+.mega-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  background: #f1f5f9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  color: #6366f1;
+  flex-shrink: 0;
+}
+
+.mega-item strong {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  color: #0f172a;
+  line-height: 1.3;
+}
+
+.mega-item small {
+  font-size: 11.5px;
+  color: #64748b;
+}
+
+/* highlight card inside mega */
+.mega-hl-card {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  color: #fff;
+}
+
+.mega-hl-card i    { font-size: 26px; margin-bottom: 2px; }
+.mega-hl-card strong { font-size: 16px; font-weight: 700; }
+.mega-hl-card p   { font-size: 13px; opacity: 0.8; line-height: 1.5; }
+
+.mega-hl-btn {
+  display: inline-block;
+  margin-top: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #fff;
+  padding: 8px 14px;
+  background: rgba(255,255,255,0.18);
+  border: 1px solid rgba(255,255,255,0.28);
+  border-radius: 8px;
+  transition: background 0.15s;
+}
+
+.mega-hl-btn:hover { background: rgba(255,255,255,0.28); }
+
+.nav-mega__actions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.mega-ghost {
+  font-size: 14px;
+  font-weight: 500;
+  color: #475569;
+  padding: 7px 16px;
+  transition: color 0.15s;
+}
+
+.mega-ghost:hover { color: #0f172a; }
+
+.mega-cta {
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  padding: 7px 18px;
+  background: #0f172a;
+  border-radius: 8px;
+  transition: background 0.15s;
+}
+
+.mega-cta:hover { background: #1e293b; }
+
+/* ══════════════════════════════════════
+   05 — APP / DASHBOARD
+   Uso: painéis internos, SaaS apps
+══════════════════════════════════════ */
+.nav-app {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  height: 52px;
+  padding: 0 20px;
+  background: #fff;
+  border-top: 1px solid #e2e8f0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.nav-app__left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+.app-logo-box {
+  width: 30px;
+  height: 30px;
+  border-radius: 7px;
+  background: #6366f1;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.nav-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+}
+
+.nav-breadcrumb span { color: #64748b; }
+.nav-breadcrumb .bc-active { color: #0f172a; font-weight: 500; }
+.nav-breadcrumb i { color: #cbd5e1; font-size: 10px; }
+
+.nav-app__search {
+  flex: 1;
+  max-width: 340px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 7px 12px;
+  cursor: text;
+  transition: all 0.15s;
+  font-size: 13px;
+  color: #94a3b8;
+}
+
+.nav-app__search:hover { border-color: #94a3b8; background: #fff; }
+.nav-app__search i { font-size: 13px; flex-shrink: 0; }
+.nav-app__search span { flex: 1; text-align: left; }
+
+.nav-app__search kbd {
+  font-size: 11px;
+  padding: 2px 6px;
+  border-radius: 5px;
+  border: 1px solid #e2e8f0;
+  background: #fff;
+  color: #94a3b8;
+  font-family: inherit;
+}
+
+.nav-app__right {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex-shrink: 0;
+}
+
+.app-icon-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  color: #64748b;
+  font-size: 16px;
+  transition: all 0.15s;
+  position: relative;
+}
+
+.app-icon-btn:hover { background: #f1f5f9; color: #0f172a; }
+
+.notif-btn .notif-dot {
+  position: absolute;
+  top: 7px;
+  right: 7px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #ef4444;
+  border: 1.5px solid #fff;
+}
+
+.app-avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-left: 4px;
+}
+
+/* ══════════════════════════════════════
+   06 — PILL FLUTUANTE
+   Uso: portfolios, landing pages criativas
+══════════════════════════════════════ */
+.pill-wrap {
+  display: flex;
+  justify-content: center;
+  padding: 8px 40px 8px;
+}
+
+.nav-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 6px 6px 6px 18px;
+  background: rgba(255,255,255,0.07);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 100px;
+}
+
+.nav-pill__logo {
+  font-size: 14px;
+  font-weight: 700;
+  color: #e2e8f0;
+  padding-right: 14px;
+  border-right: 1px solid rgba(255,255,255,0.1);
+  margin-right: 4px;
+}
+
+.nav-pill__links {
+  display: flex;
+  gap: 2px;
+}
+
+.nav-pill__links a {
+  font-size: 13.5px;
+  font-weight: 500;
+  color: #64748b;
+  padding: 6px 14px;
+  border-radius: 100px;
+  transition: all 0.15s;
+}
+
+.nav-pill__links a:hover { color: #e2e8f0; }
+.pill-active { background: rgba(255,255,255,0.1) !important; color: #f1f5f9 !important; }
+
+.nav-pill__cta {
+  font-size: 13.5px;
+  font-weight: 600;
+  color: #0f172a;
+  padding: 7px 18px;
+  background: #f1f5f9;
+  border-radius: 100px;
+  margin-left: 4px;
+  transition: background 0.15s;
+}
+
+.nav-pill__cta:hover { background: #fff; }
+
+/* ══════════════════════════════════════
+   07 — COM TABS SECUNDÁRIAS
+   Uso: portais internos, CMS, dashboards
+══════════════════════════════════════ */
+.nav-tabs-wrap {
+  border-top: 1px solid #e2e8f0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.nav-tabs-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 54px;
+  padding: 0 40px;
+  background: #fff;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.nav-tabs-logo {
+  font-size: 17px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.nav-tabs-top__actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.tabs-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #0ea5e9;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-tabs-bar {
+  background: #fff;
+  padding: 0 40px;
+}
+
+.nav-tabs-bar ul {
+  display: flex;
+  gap: 0;
+}
+
+.nav-tabs-bar li a {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13.5px;
+  font-weight: 500;
+  color: #64748b;
+  padding: 10px 16px;
+  border-bottom: 2px solid transparent;
+  transition: all 0.15s;
+}
+
+.nav-tabs-bar li a:hover { color: #0f172a; background: #f8fafc; }
+.nav-tabs-bar li a i { font-size: 14px; }
+
+.tab-active a {
+  color: #0f172a !important;
+  font-weight: 600 !important;
+  border-bottom-color: #6366f1 !important;
+}
+
+/* ══════════════════════════════════════
+   08 — MOBILE HAMBURGER
+   Uso: qualquer site responsivo
+══════════════════════════════════════ */
+.nav-mobile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  padding: 0 24px;
+  background: #fff;
+  border-top: 1px solid #e2e8f0;
+  border-bottom: 1px solid #e2e8f0;
+  position: relative;
+}
+
+.nav-mobile__logo {
+  font-size: 18px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.nav-mobile__right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.mobile-ghost {
+  font-size: 13.5px;
+  font-weight: 500;
+  color: #475569;
+  padding: 6px 14px;
+  border: 1px solid #e2e8f0;
+  border-radius: 7px;
+  transition: all 0.15s;
+}
+
+.mobile-ghost:hover { background: #f1f5f9; }
+
+/* — Hamburger icon — */
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 36px;
+  height: 36px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  transition: background 0.15s;
+}
+
+.hamburger:hover { background: #f1f5f9; }
+
+.hamburger span {
+  display: block;
+  width: 18px;
+  height: 2px;
+  background: #334155;
+  border-radius: 2px;
+  transition: transform 0.25s, opacity 0.25s;
+  transform-origin: center;
+}
+
+/*
+  Spans em repouso: gap 5px, altura 2px cada
+  Span1 centro = -7px do centro do botão
+  Span3 centro = +7px do centro do botão
+  Mover 7px para o centro + rotacionar = X
+*/
+.hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.hamburger.open span:nth-child(2) { opacity: 0; transform: scaleX(0); }
+.hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+/* — Drawer — */
+.mobile-drawer {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: #fff;
+  border-bottom: 1px solid #e2e8f0;
+  box-shadow: 0 10px 28px rgba(0,0,0,0.08);
+  padding: 12px 24px 20px;
+  z-index: 200;
+  animation: slideDown 0.2s ease;
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.mobile-drawer.open { display: block; }
+
+.mobile-drawer ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin-bottom: 16px;
+}
+
+.mobile-drawer li a {
+  display: block;
+  font-size: 14.5px;
+  font-weight: 500;
+  color: #334155;
+  padding: 10px 10px;
+  border-radius: 8px;
+  transition: background 0.15s;
+}
+
+.mobile-drawer li a:hover { background: #f1f5f9; }
+
+.drawer-actions {
+  display: flex;
+  gap: 10px;
+  padding-top: 14px;
+  border-top: 1px solid #f1f5f9;
+}
+
+.drawer-signin {
+  flex: 1;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  color: #475569;
+  padding: 10px;
+  border: 1px solid #e2e8f0;
+  border-radius: 9px;
+  transition: all 0.15s;
+}
+
+.drawer-signin:hover { background: #f8fafc; }
+
+.drawer-cta {
+  flex: 1;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  padding: 10px;
+  background: #6366f1;
+  border-radius: 9px;
+  transition: background 0.15s;
+}
+
+.drawer-cta:hover { background: #4f46e5; }
